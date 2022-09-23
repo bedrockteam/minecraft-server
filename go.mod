@@ -2,7 +2,7 @@ module github.com/bedrockteam/minecraft-server
 
 go 1.19
 
-replace github.com/bedrockteam/skin-bot => ../../../bedrock-lol/skin-bot
+//replace github.com/bedrockteam/skin-bot => ../../../bedrock-lol/skin-bot
 
 require (
 	github.com/bedrockteam/skin-bot v0.1.1-0.20220923211225-998248c138dc
