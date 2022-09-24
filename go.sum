@@ -1,7 +1,7 @@
 github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
-github.com/bedrockteam/skin-bot v0.1.1-0.20220923211225-998248c138dc h1:uVJNSyKl74Lr0Iu3qNxf1HYE40MRUn2BHhjDREgwNe8=
-github.com/bedrockteam/skin-bot v0.1.1-0.20220923211225-998248c138dc/go.mod h1:2MeMCJzux+WCHBiurkRfAzilvwqfmopkYtIHCBefOv0=
+github.com/bedrockteam/skin-bot v0.1.1-0.20220924110940-956b46ee43d6 h1:mvY0ADfycByD4bE6lGhg1e7ifTecabchqrz3T9RE4Vk=
+github.com/bedrockteam/skin-bot v0.1.1-0.20220924110940-956b46ee43d6/go.mod h1:2MeMCJzux+WCHBiurkRfAzilvwqfmopkYtIHCBefOv0=
 github.com/brentp/intintmap v0.0.0-20190211203843-30dc0ade9af9 h1:/G0ghZwrhou0Wq21qc1vXXMm/t/aKWkALWwITptKbE0=
 github.com/brentp/intintmap v0.0.0-20190211203843-30dc0ade9af9/go.mod h1:TOk10ahXejq9wkEaym3KPRNeuR/h5Jx+s8QRWIa2oTM=
 github.com/cespare/xxhash v1.1.0 h1:a6HrQnmkObjyL+Gs60czilIUGqrzKutQD6XZog3p+ko=
@@ -15,8 +15,6 @@ github.com/df-mc/goleveldb v1.1.9 h1:ihdosZyy5jkQKrxucTQmN90jq/2lUwQnJZjIYIC/9YU
 github.com/df-mc/goleveldb v1.1.9/go.mod h1:+NHCup03Sci5q84APIA21z3iPZCuk6m6ABtg4nANCSk=
 github.com/fatih/color v1.13.0 h1:8LOYc1KYPPmyKMuN8QV2DNRWNbLo6LZ0iLs8+mlH53w=
 github.com/fatih/color v1.13.0/go.mod h1:kLAiJbzzSOZDVNGyDpeOxJ47H46qBXwg5ILebYFFOfk=
-github.com/flytam/filenamify v1.1.1 h1:508gP8QR6vtbv46S3oz2ob9l7JGFdDFfqqMeh/TwzTk=
-github.com/flytam/filenamify v1.1.1/go.mod h1:Dzf9kVycwcsBlr2ATg6uxjqiFgKGH+5SKFuhdeP5zu8=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
 github.com/go-gl/mathgl v1.0.0 h1:t9DznWJlXxxjeeKLIdovCOVJQk/GzDEL7h/h+Ro2B68=
 github.com/go-gl/mathgl v1.0.0/go.mod h1:yhpkQzEiH9yPyxDUGzkmgScbaBVlhC06qodikEM0ZwQ=

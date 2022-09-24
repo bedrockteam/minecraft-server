@@ -5,7 +5,7 @@ go 1.19
 //replace github.com/bedrockteam/skin-bot => ../../../bedrock-lol/skin-bot
 
 require (
-	github.com/bedrockteam/skin-bot v0.1.1-0.20220923211225-998248c138dc
+	github.com/bedrockteam/skin-bot v0.1.1-0.20220924110940-956b46ee43d6
 	github.com/df-mc/dragonfly v0.8.5
 	github.com/pelletier/go-toml v1.9.5
 	github.com/sandertv/gophertunnel v1.24.7
@@ -18,7 +18,6 @@ require (
 	github.com/df-mc/atomic v1.10.0 // indirect
 	github.com/df-mc/goleveldb v1.1.9 // indirect
 	github.com/fatih/color v1.13.0 // indirect
-	github.com/flytam/filenamify v1.1.1 // indirect
 	github.com/go-gl/mathgl v1.0.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
