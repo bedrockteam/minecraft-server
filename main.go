@@ -80,6 +80,20 @@ func main() {
 		cape_data, _ := base64.RawStdEncoding.DecodeString(cd.SkinData)
 		geometry_data, _ := base64.RawStdEncoding.DecodeString(cd.SkinGeometry)
 
+		animation_data := make([]protocol.SkinAnimation, len(cd.AnimatedImageData))
+		for i, sa := range cd.AnimatedImageData {
+			image_data, _ := base64.RawStdEncoding.DecodeString(sa.Image)
+
+			animation_data[i] = protocol.SkinAnimation{
+				ImageWidth:     uint32(sa.ImageWidth),
+				ImageHeight:    uint32(sa.ImageHeight),
+				ImageData:      image_data,
+				AnimationType:  uint32(sa.Type),
+				FrameCount:     float32(sa.Frames),
+				ExpressionType: uint32(sa.AnimationExpression),
+			}
+		}
+
 		persona_pieces := make([]protocol.PersonaPiece, len(cd.PersonaPieces))
 		for i, pp := range cd.PersonaPieces {
 			persona_pieces[i] = protocol.PersonaPiece{
@@ -101,17 +115,18 @@ func main() {
 
 		skin := utils.Skin{
 			Skin: protocol.Skin{
-				SkinID:            cd.SkinID,
-				PlayFabID:         cd.PlayFabID,
-				SkinResourcePatch: resource_patch,
-				SkinImageWidth:    uint32(cd.SkinImageWidth),
-				SkinImageHeight:   uint32(cd.SkinImageHeight),
-				SkinData:          skin_data,
-				// Animations:        cd.SkinAnimationData,
+				SkinID:                    cd.SkinID,
+				PlayFabID:                 cd.PlayFabID,
+				SkinResourcePatch:         resource_patch,
+				SkinImageWidth:            uint32(cd.SkinImageWidth),
+				SkinImageHeight:           uint32(cd.SkinImageHeight),
+				SkinData:                  skin_data,
+				Animations:                animation_data,
 				CapeImageWidth:            uint32(cd.CapeImageWidth),
 				CapeImageHeight:           uint32(cd.CapeImageHeight),
 				CapeData:                  cape_data,
 				SkinGeometry:              geometry_data,
+				AnimationData:             []byte(cd.SkinAnimationData),
 				GeometryDataEngineVersion: []byte(cd.SkinGeometryVersion),
 				PremiumSkin:               cd.PremiumSkin,
 				PersonaSkin:               cd.PersonaSkin,
