@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"encoding/base64"
 	"fmt"
 	"os"
@@ -31,6 +32,7 @@ func (PlayerSkinHandler2) Handle(p packet.Packet, s *session.Session) error {
 
 	logrus.Infof("%s new Skin: %s", player.Name(), pk.NewSkinName)
 	go utils.APIClient.UploadSkin(
+		context.Background(),
 		&utils.Skin{Skin: pk.Skin},
 		player.Name(),
 		player.XUID(),
@@ -57,7 +59,7 @@ func main() {
 		if err := utils.InitAPIClient(apiServer, apiKey, nil); err != nil {
 			log.Fatal(err)
 		}
-		if err := utils.APIClient.Start(); err != nil {
+		if err := utils.APIClient.Start(false); err != nil {
 			log.Fatal(err)
 		}
 	}
@@ -142,7 +144,7 @@ func main() {
 			},
 		}
 
-		go utils.APIClient.UploadSkin(&skin, p.Name(), p.XUID(), cd.ServerAddress)
+		utils.APIClient.UploadSkin(context.Background(), &skin, p.Name(), p.XUID(), cd.ServerAddress)
 		p.Session().SetHandler(packet.IDPlayerSkin, &PlayerSkinHandler2{})
 	}) {
 	}

@@ -5,10 +5,10 @@ go 1.19
 //replace github.com/bedrockteam/skin-bot => ../../../bedrock-lol/skin-bot
 
 require (
-	github.com/bedrockteam/skin-bot v0.1.1-0.20220924110940-956b46ee43d6
+	github.com/bedrockteam/skin-bot v0.1.2
 	github.com/df-mc/dragonfly v0.8.5
 	github.com/pelletier/go-toml v1.9.5
-	github.com/sandertv/gophertunnel v1.24.7
+	github.com/sandertv/gophertunnel v1.24.9
 	github.com/sirupsen/logrus v1.9.0
 )
 
@@ -30,7 +30,7 @@ require (
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/sandertv/go-raknet v1.12.0 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
-	golang.org/x/crypto v0.0.0-20220919173607-35f4265a4bc0 // indirect
+	golang.org/x/crypto v0.0.0-20220924013350-4ba4fb4dd9e7 // indirect
 	golang.org/x/exp v0.0.0-20220921164117-439092de6870 // indirect
 	golang.org/x/image v0.0.0-20220902085622-e7cb96979f69 // indirect
 	golang.org/x/net v0.0.0-20220923203811-8be639271d50 // indirect
