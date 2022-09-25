@@ -5,7 +5,7 @@ go 1.19
 //replace github.com/bedrockteam/skin-bot => ../../../bedrock-lol/skin-bot
 
 require (
-	github.com/bedrockteam/skin-bot v0.1.2-1
+	github.com/bedrockteam/skin-bot v0.1.2-3
 	github.com/df-mc/dragonfly v0.8.5
 	github.com/pelletier/go-toml v1.9.5
 	github.com/sandertv/gophertunnel v1.24.9

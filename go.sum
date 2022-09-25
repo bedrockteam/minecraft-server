@@ -1,7 +1,7 @@
 github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
-github.com/bedrockteam/skin-bot v0.1.2-1 h1:qgT/hy5WsyJIA3XQZaRq1Ljm5l17Mrp1IGL/Srm5PSg=
-github.com/bedrockteam/skin-bot v0.1.2-1/go.mod h1:0NzDfpDjuhcIg8bxtGvsil6JWEd/rxCFbeuY738pQt8=
+github.com/bedrockteam/skin-bot v0.1.2-3 h1:qFvT0+Ud1Fit2I4a79QQzKqVZTmQn/sMJhcTFhQ1+ZE=
+github.com/bedrockteam/skin-bot v0.1.2-3/go.mod h1:0NzDfpDjuhcIg8bxtGvsil6JWEd/rxCFbeuY738pQt8=
 github.com/brentp/intintmap v0.0.0-20190211203843-30dc0ade9af9 h1:/G0ghZwrhou0Wq21qc1vXXMm/t/aKWkALWwITptKbE0=
 github.com/brentp/intintmap v0.0.0-20190211203843-30dc0ade9af9/go.mod h1:TOk10ahXejq9wkEaym3KPRNeuR/h5Jx+s8QRWIa2oTM=
 github.com/cespare/xxhash v1.1.0 h1:a6HrQnmkObjyL+Gs60czilIUGqrzKutQD6XZog3p+ko=
