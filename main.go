@@ -45,6 +45,9 @@ func (PlayerSkinHandler2) Handle(p packet.Packet, s *session.Session) error {
 func clientDataToSkin(cd *login.ClientData) *utils.Skin {
 	resource_patch, _ := base64.RawStdEncoding.DecodeString(cd.SkinResourcePatch)
 	skin_data, _ := base64.RawStdEncoding.DecodeString(cd.SkinData)
+	if len(skin_data)%4 != 0 {
+		skin_data = append(skin_data, 0)
+	}
 	cape_data, _ := base64.RawStdEncoding.DecodeString(cd.CapeData)
 	geometry_data, _ := base64.RawStdEncoding.DecodeString(cd.SkinGeometry)
 
